@@ -205,7 +205,7 @@ footer {
     #certifications,
     #projects,
     #contact {
-        height: 30vh; /* Adjust height for smaller screens */
+        height: 50vh; /* Adjust height for smaller screens */
     }
 
     .profile-picture {
