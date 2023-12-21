@@ -193,3 +193,39 @@ footer {
     padding: 10px;
     width: 100%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    #hero-section,
+    #experience,
+    #certifications,
+    #projects,
+    #contact {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .profile-picture {
+        width: 100%; /* Make the profile picture responsive */
+        top: 0;
+        left: 0;
+    }
+
+    .hero-section-custom .left-div,
+    .hero-section-custom .right-div {
+        max-width: 100%; /* Adjust max-width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    #projects .section-div {
+        grid-template-columns: 1fr; /* Change to a single column for smaller screens */
+    }
+
+    footer {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+}
