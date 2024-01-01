@@ -1989,6 +1989,15 @@ input, select, textarea {
 			padding: 2em 0 0 2em;
 		}
 
+		ul.special img {
+		    margin-top: 15px;
+		    min-width: 100px;
+		    min-height: 100px;
+		    width: 12vw;
+		    height: 12vw;
+		    object-fit: cover;
+		}
+
 			ul.special li a {
 				display: block;
 				outline: 0;
