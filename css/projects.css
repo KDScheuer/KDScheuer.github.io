@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 50px 0 0 0;
 }
 .backgroundOverlay {
     background-color: rgba(0, 0, 0, .3)
@@ -20,6 +21,10 @@ body {
 nav {
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 nav ul {
     width: 100%;
