@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="css/projects.css">
+        <title>Kris Portfolio</title>
+    </head>
+    <body>
+        <div class="backgroundOverlay">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html#certifications">Certifications</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#languages">Languages</a></li>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="./index.html#certifications">Certifications</a></li>
+                <li class="hideOnMobile"><a href="./index.html#experience">Experience</a></li>
+                <li class="hideOnMobile"><a href="./index.html#languages">Languages</a></li>
+                <li class="hideOnMobile"><a href="./index.html#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="./index.html#contact">Contact</a></li>
+                <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <section class="pageContainer">
+            <h1>World Map API</h1>
+            <div class="titleUnderline"></div>
+            <section class="intro">
+                <h2>Introduction</h2>
+                <p>
+                    This is a straightforward program that enables users to hover over any country on a world map and access information such as its capital city, 
+                    region, and income level. The project utilizes the World Bank API.
+                </p>
+                <div class="imageContainer">
+                    <img src="./Assets/Project2/project_gif.gif" alt="World Map API GIF">
+                </div>
+            </section>
+            </section>
+            <section class="pageContainer">
+            <section class="implementation">
+                <h2>Implentation</h2>
+                <p class="techUsed"><b>Technologies Used: </b>Angular, JavaScript, HTML, CSS</p>
+                <p>
+                    In the design of this project, the emphasis was on providing a user-friendly experience. The country being hovered over changes color immediately, 
+                    reverting to black upon exit. This ensures that users are always aware of their mouse position on the screen.
+                </p>
+                <div class="imageContainer">
+                    <img src="./Assets/Project2/image1.PNG" alt="Project Image 1">
+                </div>
+                <p>
+                    When the mouse hovers over a country, its color changes, and the current mouse position is checked against the world map SVG to obtain the country's 
+                    ID. Subsequently, an API call is made to the World Bank's API to retrieve the country's information. Any errors encountered during this process are 
+                    logged to the console.
+                </p>
+                <div class="imageContainer">
+                    <img src="./Assets/Project2/image2.PNG" alt="Project Image 2">
+                </div>
+                <p>
+                    Upon receiving the API response, the data is parsed, and an object with the relevant attributes is created. This object is then sent to another function 
+                    that renders the correct data in the aside element on the webpage.   
+                </p>
+                <div class="imageContainer">
+                    <img src="./Assets/Project2/image3.PNG" alt="Project Image 3">
+                </div>
+            </section>
+            </section>
+            <section class="pageContainer">
+            <section class="Challenges">
+                <h2>Challenges Faced</h2>
+                <p>
+                    This project was undertaken for a college course and required the use of the Angular framework, which posed a significant obstacle as I was not familiar 
+                    with it. After configuring a proxy to facilitate successful API requests, the main challenge involved updating the aside element with the obtained data.
+                </p>
+            </section>
+            </section>
+            <section class="pageContainer">
+            <section class="repo">
+                <h2>Veiw the Source Code</h2>
+                <a href="https://github.com/KDScheuer/College-World-Map-API/tree/main" target="_blank"><p class="repoLink">GitHub Repo</p></a>
+            </section>
+        </section>
+        </section>
+        <script src="./js/menu.js"></script>
+    </div>
+    </body>
+</html>

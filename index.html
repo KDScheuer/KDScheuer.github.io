@@ -1,279 +1,157 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Kris Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Kris Portfolio</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
 
-			<!-- Header -->
-				<header id="header">
-					<div class="logo container">
-						<div>
-							<h1><a href="index.html" id="logo">Welcome to my Portfolio</a></h1>
-							<p></p>
-						</div>
-					</div>
-				</header>
-
-			<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li><a href="#banner">Home</a></li>
-						<li><a href="#main">Certifications</a></li>
-						<li><a href="#experience">Experience</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#footer">Get in Touch</a></li>
-					</ul>
-				</nav>
-
-			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<h2>Hi, My Name is Kristopher Scheuer</h2>
-						<p>An experienced Systems Administrator with over 8 years of experience working in enterprise environments</p>
-						<a href="#main" class="button">About Me</a>
-					</div>
-				</section>
-
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-12">
-
-								<!-- Certifications -->
-									<section class="box highlight">
-										<header>
-											<h2>Industry Certifications</h2>
-											<h3>Verify via Credly</h3>
-										</header>
-										<ul class="special">
-											<li><a href="https://www.credly.com/badges/3273b836-5141-4347-afde-1e1775553c60"
-											       target="_blank" class="icon"><img src="./images/CCNA.jpg" alt="sec+">
-											       <p>Verify</p></a>
-											</li>
-											<li><a href="https://www.credly.com/badges/40a72d1d-c5ac-4be7-a688-89c4557aca56"
-											       target="_blank" class="icon"><img src="./images/Sec+.png" alt="sec+">
-											       <p>Verify</p></a>
-											</li>
-											<li><a href="https://www.credly.com/badges/c4a7e57f-d157-4d8c-8514-e4965594ed17"
-											       target="_blank" class="icon"><img src="./images/VCP.jpg" alt="sec+">
-											       <p>Verify</p></a>
-											</li>
-											<li><a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000561786/rtazbr842g"
-											       target="_blank" class="icon"><img src="./images/LPIC.jpg" alt="sec+">
-											       <p>Verify</p></a>
-											</li>
-										</ul>
-										<header>
-											<p>Other Certificates Include</p>
-										</header>
-											<ul class="list">
-												<li>Date Science Fundentals</li>
-												<li>Databases and SQL for Data Science</li>
-												<li>Python for Everybody</li>
-												<li>Google IT and Automation with Python</li>
-												<li>Responsive Web Design</li>
-												<li>Python for Data Science, AI, and Development</li>
-											</ul>
-									</section>
-
-							</div>
-							<div class="col-12">
-
-								<!-- Experience -->
-									<section class="box features" id="experience">
-										<h2 class="major"><span>Professional Experience</span></h2>
-										<div>
-											<div class="row">
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a class="image featured"><img src="images/cyber-sec.jpg"/></a>
-															<h3>Cybersecurity</h3>
-															<ul class="list">
-															    <li>Vulnerability Scanning</li>
-																<li>Patch Management</li>
-																<li>IDS and IPS Configuration</li>
-																<li>Vulnerability Assessments</li>
-																<li>Incident Response</li>
-															</ul>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a class="image featured"><img src="images/virt-infa.jpg"/></a>
-															<h3>Virtual Infrastructure</h3>
-															<ul class="list">
-																<li>VMware vSphere</li>
-																<li>Virtual Networking</li>
-																<li>VM Creation and Templating</li>
-																<li>High Availability and DRS</li>
-																<li>vSAN</li>
-															</ul>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a class="image featured"><img src="images/sys-admin.jpg"/></a>
-															<h3>Systems Administration</h3>
-															<ul class="list">
-																<li>Microsoft Active Directory</li>
-																<li>DNS</li>
-																<li>Group Policy</li>
-																<li>Scripting and Automation</li>
-																<li>RedHat Enterprise Linux</li>
-															</ul>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a class="image featured"><img src="images/net.jpg"/></a>
-															<h3>Networking</h3>
-															<ul class="list">
-																<li>OSPF and EIGRP</li>
-																<li>DHCP IPv4 & IPv6</li>
-																<li>WAN / LAN</li>
-																<li>Subnetting</li>
-																<li>Network Design</li>
-															</ul>
-														</section>
-
-												</div>
-											</div>
-										</div>
-									</section>
-
-							</div>
-							<div class="col-12">
-									<!-- Projects -->
-									<section class="box features" id="projects">
-										<h2 class="major"><span>Personal Projects</span></h2>
-										<h3 class="major">I'm always learning more! Here are some side projects I've done to further my knowledge of IT.</h3>
-										<div>
-											<div class="row">
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Project -->
-														<section class="box feature">
-															<a href="https://github.com/KDScheuer/Password-Manager" target="_blank"
-															   class="image featured"><img src="images/passwd-man.jpg" alt="" />
-															   <p>View Code</p></a>
-															<h3>Password Manager</h3>
-															<p>Introducing my Password Manager, a Python application designed for secure account management. Utilizing Fernet symmetric encryption, 
-															it ensures your credentials are safe. With a user-friendly interface, a master password for authentication, and persistent data storage, 
-															you can effortlessly add, modify, and delete accounts with on-screen prompts.</p>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Project -->
-														<section class="box feature">
-															<a href="https://github.com/KDScheuer/Image-Video-Clean-Up-Script" target="_blank"
-															   class="image featured"><img src="images/file-man.jpg" alt="" />
-															   <p>View Code</p></a>
-															<h3>Media Manager</h3>
-															<p>Explore my Media Manager script, crafted to simplify media organization. By recursively organizing photos and videos based on creation 
-															date in a specified directory, this tool is a game-changer. It effortlessly handles various file extensions, providing a seamless process 
-															for users to organize their media files.</p>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Project -->
-														<section class="box feature">
-															<a href="https://github.com/KDScheuer/Linux-Backup-Utility" target="_blank" 
-															   class="image featured"><img src="images/backup-man.jpg" alt="" />
-															   <p>View Code</p></a>
-															<h3>Linux BackUp Manager</h3>
-															<p>Dive into my Linux Backup Manager, a Bash script tailored for efficient directory backups and restores. Featuring a user-friendly menu,
-															it lets you create compressed tarballs with timestamps for backups and restores directories effortlessly. With simple steps, this tool makes
-															backup management a breeze.</p>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-  													<!-- Project -->
-  														<section class="box feature">
-															<a href="https://github.com/KDScheuer/Meteor-Mayhem" target="_blank" 
-																class='image featured'><img src="images/game.jpg" alt="" />
-															   	<p>View Code</p></a>															   
-															<h3>Meteor Mayhem (PyGame)</h3>
-															<p>I developed this game for the 2024 Pirate Software Game Jam, it is a casual arcade-style game where players defend from multiplying meteors. 
-															This project provided valuable insights into Object-Oriented Programming (OOP), animations, and the structuring of a game loop.
-															<br>
-															<a href='https://kdscheuer.itch.io/meteor-mayhem' target='_blank'>Play it Here (itch.io)</a>
-															</p>
-														</section>
-												</div>
-
-											</div>
-										</div>
-									</section>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section>
-										<!-- Include Font Awesome CSS from CDN -->
-										<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Oh+MvZ7dQENtRVxRtjI2+A5WPEL6GHRd8dt7VbUAsFddI1S/ZMbdKbKUQ5Q0vm5PXMPz4D7JxAM+skA5EaT6GA==" crossorigin="anonymous" />
-
-										<h2 class="major"><span>Get in touch</span></h2>
-										<h3 class="major">Visit my LinkedIn, GitHub or Download my Resume.</h3>
-										<ul class="contact">
-											<li><a class="fab fa-github icon brands" href="https://github.com/KDScheuer" target="_blank"></a></li>
-											<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/kdscheuer/" target="_blank"><span class="label">LinkedIn</span></a></li>
-											<li><a class="fas fa-file-pdf" href="./assets/Resume/Resume Jan 6.pdf"></a></li>
-										</ul>
-									</section>
-
-							</div>
-						</div>
-
-						<!-- Copyright -->
-							<div id="copyright">
-								<ul class="menu">
-									<li>&copy;Kristopher Scheuer. All rights reserved</li>
-								</ul>
-							</div>
-
-					</div>
-				</footer>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+            </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#certifications">Certifications</a></li>
+                <li class="hideOnMobile"><a href="#experience">Experience</a></li>
+                <li class="hideOnMobile"><a href="#languages">Languages</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="content">
+                <h2>HI, I'M KRISTOPHER</h2>
+                <h1>WELCOME TO MY PORTFOLIO</h1>
+                <p>AN EXPERIENCED SYSTEMS ADMINISTRATOR WITH OVER 8 YEARS OF EXPERIENCE WORKING IN ENTERPRISE ENVIRONMENTS</p>
+            </div>
+            </section>
+        <section id="certifications" class="certifications">
+            <h2>INDUSTRY CERTIFICATIONS</h2>
+            <p style="margin-top: -15px;">Click Icon to Verify</p>
+            <div class="certImages">
+                <a href="https://www.credly.com/badges/40a72d1d-c5ac-4be7-a688-89c4557aca56" target="_blank"><img src="./Assets/Sec+.png" alt="CompTIA Security Plus"></a>
+                <a href="https://www.credly.com/badges/3273b836-5141-4347-afde-1e1775553c60" target="_blank"><img src="./Assets/CCNA.jpg" alt="Cisco Certified Networking Assoicate"></a>
+                <a href="https://www.credly.com/badges/c4a7e57f-d157-4d8c-8514-e4965594ed17" target="_blank"><img src="./Assets/VCP.jpg" alt="VMware Certified Professional"></a>
+                <a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000561786/rtazbr842g" target="_blank"><img src="./Assets/LPIC.jpg" alt="Linux Professional Institute - Essentials"></a>
+            </div>
+            <div style="height: 4vh;"></div>
+            <h2 class="certificates">CERTIFICATES</h2>
+            <p style="margin-top: -22px;">Click Icon to Verify</p>
+            <div class = "certImages">
+                <a href="https://www.credly.com/badges/cce54876-2c4c-4d04-ab6a-d2256a6eff1f" target="_blank"><img src="./Assets/googleAutomation.png" alt="Google Automation with Python"></a>
+                <a href="https://www.credly.com/badges/8f90baab-f295-4a45-89d9-39600d1fdfad" target="_blank"><img src="./Assets/Data_Science.png" alt="Python for Data Science"></a>
+                <a href="https://www.credly.com/badges/14e64a5a-2358-4202-9110-962c62622942" target="_blank"><img src="./Assets/DBandSQL.png" alt="IBM Databases and SQL"></a>
+                <a href="https://www.credly.com/badges/38b2c20c-6a42-4461-9459-e4e7b6a9f6be" target="_blank"><img src="./Assets/Python_AI.png" alt="Python for AI and Development"></a>
+            </div>
+        </section>
+        <div class="sectionBreak"></div>
+        <section id="experience" class="experience">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <div class="domainContainer">
+                <div class="domain">
+                    <h3>CYBERSECURITY</h3>
+                    <p>Vulnerability Scanning</p>
+                    <p>Patch Management</p>
+                    <p>IDS and IPS Configuration</p>
+                    <p>Vulnerability Assessments</p>
+                    <p>Incident Response</p>
+                </div>
+                <div class="domain">
+                    <h3>VIRTUAL INFRASTRUCTURE</h3>
+                    <p>VMware vSphere</p>
+                    <p>Virtual Networking</p>
+                    <p>Template Creation</p>
+                    <p>High Availability and DRS</p>
+                    <p>vSAN</p>
+                </div>
+                <div class="domain">
+                    <h3>SYSTEMS ADMINISTRATION</h3>
+                    <p>Microsoft Active Directory</p>
+                    <p>DNS</p>
+                    <p>Group Policy</p>
+                    <p>Scripting and Automation</p>
+                    <p>RedHat Enterprise Linux</p>
+                </div>
+                <div class="domain">
+                    <h3>NETWORKING</h3>
+                    <p>OSPF and EIGRP</p>
+                    <p>DHCP IPv4 & IPv6</p>
+                    <p>WAN / LAN</p>
+                    <p>Subnetting</p>
+                    <p>Network Design</p>
+                </div>
+            </div>
+        </section>
+        <div class="sectionBreak"></div>
+        <section id="languages" class="languages">
+            <h2>PROGRAMING LANGUAGES</h2>
+            <div class="langIcons">
+                <img src="./Assets/java.jpg" style="border-radius: 20px;">
+                <img src="./Assets/python.png">
+                <img src="./Assets/shell.png" style="border-radius: 20px;">
+                <img src="./Assets/powershell.png">
+                <img src="./Assets/html.png">
+                <img src="./Assets/css.png">
+                <img src="./Assets/js.png">
+            </div>
+        </section>
+        <div class="sectionBreak"></div>
+        <section id="projects" class="projects">
+            <h2>PROJECTS</h2>
+            <div class="projectsContainer">
+                <div class="project">
+                    <div class="projectImg">
+                        <img src="./Assets/Project1/project_gif.gif" alt="Game of Life">
+                    </div>
+                    <div class="projectText">
+                        <h3 style="margin-top: 20px;">Game of Life</h3>
+                        <p><b>Written In: </b>Java</p>
+                        <a href="./project1.html">Visit Project Page</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="projectImg">
+                        <img src="./Assets/Project2/project_gif.gif" alt="World Map APIe">
+                    </div>
+                    <div class="projectText">
+                        <h3 style="margin-top: 20px;">World Map API</h3>
+                        <p><b>Written In: </b>JavaScript / HTML / CSS</p>
+                        <a href="./project2.html">Visit Project Page</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="projectImg">
+                        <img src="./Assets/Project3/project_gif.gif" alt="Password Manager">
+                    </div>
+                    <div class="projectText">
+                        <h3 style="margin-top: 20px;">World Map API</h3>
+                        <p><b>Written In: </b>JavaScript / HTML / CSS</p>
+                        <a href="./project3.html">Visit Project Page</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sectionBreak"></div>
+        <section id="contact" class="contact">
+            <h2>GET IN TOUCH</h2>
+            <p>Visit my LinkedIn, GitHub or Download My Resume</p>
+            <div class="contactIcons">
+                <a href="https://www.linkedin.com/in/kdscheuer/" target="_blank"><img src="./Assets/linkedin.png" alt="LinkedIn Icon"></a>
+                <a href="https://github.com/KDScheuer" target="_blank"><img src="./Assets/github.png" alt="GitHub Icon"></a>
+                <a href="./Assets/Resume Jan 6.pdf"><img src="./Assets/pdf.png" alt="PDF Icon"></a>
+            </div>
+        </section>
+        <div class="sectionBreak">©Kristopher Scheuer. All rights reserved</div>
+        <script src="./js/menu.js"></script>
+    </body>
 </html>

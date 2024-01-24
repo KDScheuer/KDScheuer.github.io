@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    background-image: url(../Assets/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.backgroundOverlay {
+    background-color: rgba(0, 0, 0, .3)
+}
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+    font-weight: bold;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover {
+    background-color: #b8b8b8;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menuButton {
+    display: none;
+}
+
+.pageContainer {
+    text-align: center;
+    width: 90%;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.pageContainer:first-of-type {
+    margin-top: 20px;
+}
+.pageContainer:last-of-type {
+    margin-bottom: 20px;
+}
+.pageContainer h1 {
+    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0em;
+}
+
+.titleUnderline {
+    border-top: 10px double black;
+    margin-bottom: 2em;
+    width: 80%;
+    margin: 0 auto 2em auto;
+}
+
+.pageContainer h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 0em;
+}
+
+.pageContainer p {
+    font-size: 1.3em;
+}
+
+.pageContainer ul {
+    list-style-type: circle;
+    text-align: left;
+    width: fit-content;
+    margin: 1em auto;
+    font-size: 1.2em;
+}
+
+.pageContainer ol {
+    text-align: left;
+    width: fit-content;
+    margin: 1em auto;
+    font-size: 1.2em;
+}
+
+.imageContainer {
+    max-width: max-content;
+    max-height: max-content;
+    background-color: gray;
+    padding: 10px;
+    margin: 50px auto;
+    border: 20px double white;
+    border-radius: 30px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.techUsed {
+    background-color: gray;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em auto 2em auto;
+    color: white;
+    padding: 10px;
+    border: 10px double white;
+    border-radius: 30px;
+}
+
+.repo a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.repoLink {
+    background-color: rgb(2, 2, 189);
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 1em;
+    border: 5px double white;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.repoLink:hover {
+    background-color: rgb(34, 104, 255);
+    cursor: pointer;
+}
+
+  @media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menuButton {
+        display: block;
+    }
+}
+
+@media(max-width:500px) {
+    .pageContainer h1 {
+        font-size: 3em;
+    }   
+    .pageContainer h2 {
+        font-size: 1.5em;
+    }
+    
+    .pageContainer p {
+        font-size: 1em;
+    }
+    
+    .pageContainer ul {
+        font-size: 1em;
+    }
+    
+    .pageContainer ol {
+        font-size: 1em;
+    }
+    li {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}

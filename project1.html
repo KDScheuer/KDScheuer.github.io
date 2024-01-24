@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="css/projects.css">
+        <title>Kris Portfolio</title>
+    </head>
+    <body>
+        <div class="backgroundOverlay">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html#certifications">Certifications</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#languages">Languages</a></li>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="./index.html#certifications">Certifications</a></li>
+                <li class="hideOnMobile"><a href="./index.html#experience">Experience</a></li>
+                <li class="hideOnMobile"><a href="./index.html#languages">Languages</a></li>
+                <li class="hideOnMobile"><a href="./index.html#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="./index.html#contact">Contact</a></li>
+                <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <section class="pageContainer">
+            <h1>Game of Life</h1>
+            <div class="titleUnderline"></div>
+            <section class="intro">
+                <h2>Introduction</h2>
+                <p>
+                    This is my implementation of Conway's Game of Life, a cellular automation game where the outcome is determined by the initial seed. 
+                    Cells can produce a new cell, remain alive, or die based on simple rules:
+                </p>
+                <ul>
+                    <li>Any cell with fewer than 2 neighbors dies, as if by underpopulation.</li>
+                    <li>Any live cell with 2 or 3 live neighbors lives to the next generation.</li>
+                    <li>Any live cell with more than 3 neighbors dies, as if by overpopulation.</li>
+                    <li>Any dead cell with exactly 3 live neighbors becomes a live cell, if by reproduction.</li>
+                </ul>
+                <div class="imageContainer">
+                    <img src="./Assets/Project1/project_gif.gif" alt="Game of Life GIF">
+                </div>
+            </section>
+            </section>
+            <section class="pageContainer">
+            <section class="implementation">
+                <h2>Implentation</h2>
+                <p class="techUsed"><b>Technologies Used: </b>Java</p>
+                <p>
+                    In designing this project, I ensured that all variables affecting the game were separated out and immutable. 
+                    This allows for easy adjustments to observe how the game plays out, while ensuring that the inital parameters remain the same.
+                </p>
+                <div class="imageContainer">
+                    <img src="./Assets/Project1/image1.PNG" alt="Project Image 1">
+                </div>
+                <p>
+                    I chose an object-oriented approach, creating cell objects that could be active or inactive. During the initial run, the program refers 
+                    to the variables to determine where active cells can spawn, their size, and the chance that a cell in the spawn box is active. Based on 
+                    the size of the cells, I generate a list of possible x and y coordinates and iterate through these lists to create the cell objects and 
+                    generate the first cell generation.
+                </p>
+                <div class="imageContainer">
+                    <img src="./Assets/Project1/image2.PNG" alt="Project Image 2">
+                </div>
+                <p>
+                    To apply the rules to the current generation, I created methods to check if a cell's neighbors were active. To handle potential edge cases, 
+                    I created attributes for the cell's number of active neighbors and whether the cell should live or die in the next generation. The purpose 
+                    of the "flip active" attribute is to ensure that the status of the current generation is not changed until the entire screen is analyzed.    
+                </p>
+                <div class="imageContainer">
+                    <img src="./Assets/Project1/image3.PNG" alt="Project Image 3">
+                </div>
+                <p> 
+                    After enumerating the current generation of cells, I create the next generation by iterating through the cells. If the "flip active" 
+                    variable is true, the cell's state is flipped. This process repeats indefinitely, completing the Game of Life.
+                </p>
+                <div class="imageContainer">
+                    <img src="./Assets/Project1/image4.PNG" alt="Project Image 4">
+                </div>
+            </section>
+            </section>
+            <section class="pageContainer">
+            <section class="Challenges">
+                <h2>Challenges Faced</h2>
+                <p>
+                    This was my first time programming in Java, and with a majority of my experience prior to this project being in Python, many challenges 
+                    were language-related. These included: 
+                </p>
+                <ol>
+                    <li>Syntax</li>
+                    <li>GUI Creation</li>
+                    <li>Public vs Private Methods</li>
+                    <li>Mutable and Imuttable Variables</li>
+                    <li>Slowing the Frame Rate</li>
+                </ol>
+            </section>
+            </section>
+            <section class="pageContainer">
+            <section class="repo">
+                <h2>Veiw the Source Code</h2>
+                <a href="https://github.com/KDScheuer/Game-of-Life---JAVA" target="_blank"><p class="repoLink">GitHub Repo</p></a>
+            </section>
+        </section>
+        </section>
+        <script src="./js/menu.js"></script>
+    </div>
+    </body>
+</html>
