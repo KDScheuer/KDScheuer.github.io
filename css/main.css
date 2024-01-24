@@ -166,7 +166,7 @@ nav li:first-child {
     width: 95%;
     height: min-content;
     margin: 30px auto;
-    padding: 25px;
+    padding: 75px 25px 25px 25px;
     text-align: center;
 
 }
@@ -211,7 +211,7 @@ nav li:first-child {
     height: min-content;
     margin: 30px auto;
     text-align: center;
-    padding: 10px;
+    padding: 60px 10px 10px 10px;
     border-radius: 30px;
 }
 .languages h2 {
@@ -238,7 +238,7 @@ nav li:first-child {
     width: 95%;
     height: min-content;
     margin: 30px auto;
-    padding: 25px;
+    padding: 75px 25px 25px 25px;
     text-align: center;
 }
 .projects h2 {
