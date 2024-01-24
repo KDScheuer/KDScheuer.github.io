@@ -125,9 +125,9 @@ nav li:first-child {
 .certifications h2 {
     color: black;
     font-size: 2em;
-    margin: 0 auto;
     text-decoration: underline;
     margin: 10px;
+    margin-bottom: 20px;
 }
 
 .certifications p {
@@ -370,5 +370,8 @@ nav li:first-child {
 @media(max-width: 400px) {
     .sidebar{
         width: 100%;
+    }
+    .certifications {
+        padding: 75px 20px 75px 20px;
     }
 }
